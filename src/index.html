@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="ngclient">
+
+<head>
+	<title>ngClient</title>
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/app.css"> </head>
+<base href="/">
+
+<body>
+	<div ng-include="'../app/views/header.html'"></div>
+	<div class="container" ng-view></div>
+	<div ng-include="'../app/views/footer.html'"></div>
+	<!--	<script data-main="./app/app.min" src="./libs/requirejs/require.js"></script>-->
+	<!--	js references-->
+	<!--
+<script type="text/javascript" src="./libs/angular/angular.js"></script>
+<script type="text/javascript" src="./libs/angular-route/angular-route.js"></script>
+-->
+	<!--
+	<script type="text/javascript" src="./app/services/factory.js"></script>
+<script type="text/javascript" src="./app/services/filters.js"></script><script type="text/javascript" src="./app/directives/directives.js"></script>
+-->
+	<!--	<script type="text/javascript" src="./app/controllers/controllers.js"></script>-->
+	<!--
+	<script type="text/javascript" src="./app/auth/auth.factory.js"></script>
+<script type="text/javascript" src="./app/auth/auth.controller.js"></script>
+-->
+	<script type="text/javascript" src="./app/app.min.js"></script>
+</body>
+
+</html>

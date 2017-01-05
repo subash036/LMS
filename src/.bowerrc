@@ -1,0 +1,5 @@
+{
+  "directory": "lib/", 
+  "proxy": "http://e10854:qwerty++++123@10.204.135.105:8080",
+  "https-proxy":"http://e10854:qwerty++++123@10.204.135.105:8080"
+}

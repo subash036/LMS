@@ -5,22 +5,25 @@ var myService = require('./services/factory')
 var myApp = angular.module('ngclient', ['ngRoute']);
 myApp.controller(controllers.HomeCtrl);
 myApp.controller("HeaderCtrl", function ($scope) {
-	$scope.showMenu = true;
+    $scope.showMenu = true;
 })
 myApp.controller(controllers.registerCtrl);
 myApp.factory(myService);
 myApp.config(function ($routeProvider, $locationProvider) {
-	//	$httpProvider.interceptors.push('TokenInterceptor');
-	$routeProvider.when('/', {
-		templateUrl: './app/views/home.html'
-		, controller: controllers.HomeCtrl
-	}).when('/home', {
-		templateUrl: './app/views/home.html'
-		, controller: controllers.HomeCtrl
-	}).when('/register', {
-		templateUrl: './app/views/register.html'
-		, controller: controllers.registerCtrl
-	});
-//	$locationProvider.html5Mode(true);
+    //	$httpProvider.interceptors.push('TokenInterceptor');
+    $routeProvider.when('/', {
+        templateUrl: './app/views/home.html'
+        , controller: controllers.HomeCtrl
+    }).when('/home', {
+        templateUrl: './app/views/home.html'
+        , controller: controllers.HomeCtrl
+    }).when('/register', {
+        templateUrl: './app/views/register.html'
+        , controller: controllers.registerCtrl
+    }).when('/login', {
+        templateUrl: './app/views/login.html'
+        , controller: controllers.loginCtrl
+    });
+    //	$locationProvider.html5Mode(true);
 });
 module.exports = myApp;

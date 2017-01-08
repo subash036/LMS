@@ -1,4 +1,4 @@
 var urlBase = {
-	apiBase: 'http://localhost:8080/api/'
+    apiBase: 'http://127.0.0.1:8080/'
 }
-module.export = urlBase;
+module.exports = urlBase;

@@ -50,6 +50,7 @@ var apiRoutes = express.Router();
 app.post('/register', function (req, res) {
     // create a sample user
     var user = new User();
+    console.log(req.body.username);
     user.username = req.body.username;
     user.password = req.body.password;
     // save the sample user

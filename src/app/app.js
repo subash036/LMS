@@ -21,6 +21,6 @@ myApp.config(function ($routeProvider, $locationProvider) {
 		templateUrl: './app/views/register.html'
 		, controller: controllers.registerCtrl
 	});
-	$locationProvider.html5Mode(true);
+//	$locationProvider.html5Mode(true);
 });
 module.exports = myApp;

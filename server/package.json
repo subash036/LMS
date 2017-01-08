@@ -9,6 +9,7 @@
   "author": "Arvind Ravulavaru",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.0",
     "body-parser": "^1.8.3",
     "express": "^4.9.4",
     "jwt-simple": "^0.2.0",

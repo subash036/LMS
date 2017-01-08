@@ -70,7 +70,7 @@ apiRoutes.get('/', function (req, res) {
     });
 });
 // route to return all users (GET http://localhost:8080/api/users)
-app.get('/users', function (req, res) {
+apiRoutes.get('/users', function (req, res) {
     User.find({}, function (err, users) {
         res.json(users);
     });
@@ -120,7 +120,7 @@ app.post('/authenticate', function (req, res) {
     });
 });
 // route middleware to verify a token
-apiRoutes.use(function (req, res, next) {
+app.use(function (req, res, next) {
     // check header or url parameters or post parameters for token
     var token = req.body.token || req.query.token || req.headers['x-access-token'];
     // decode token
